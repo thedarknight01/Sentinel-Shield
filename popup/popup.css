@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+button:focus {
+  outline: 2px solid #4285f4;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* General Layout */
+.popup-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 380px;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding-top: 8px;
+  border-top: 1px solid #e9ecef;
+  font-size: 10px;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* Navigation Tabs */
+.nav {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.nav__tab {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav__tab:hover {
+  background-color: #f8f9fa;
+}
+
+.nav__tab--active {
+  border-bottom-color: #007bff;
+  font-weight: 600;
+}
+
+.nav__tab-icon {
+  font-size: 14px;
+}
+
+.nav__tab-title {
+  font-size: 9px;
+}
+
+/* Dashboard Cards */
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dashboard__card {
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.card__value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__label {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.card__value--threat {
+  color: #dc3545;
+}
+
+.card__value--success {
+  color: #28a745;
+}
+
+/* Alerts and Blocked URL Lists */
+.alert-box {
+  padding: 12px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.blocked-box {
+  padding: 12px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.box__title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* General UI Elements */
+.button {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: #007bff;
+}
+
+.button--danger {
+  background-color: #dc3545;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input-filter {
+  flex: 1;
+  margin-right: 8px;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
